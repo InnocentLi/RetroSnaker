@@ -1,3 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <canvas id="myCanvas" width="625" height="625" style="border:1px solid #000000;">不支持canvas</canvas>
+    <script>
         var canvas = document.getElementById('myCanvas')
         var ctx = canvas.getContext('2d');
         var snake = [286, 287, 288, 289, 290, 291];
@@ -41,3 +49,7 @@
                 go();
             }
             setInterval("main()", 200);
+    </script>
+</body>
+
+</html>
