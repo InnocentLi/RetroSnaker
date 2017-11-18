@@ -31,7 +31,7 @@
                 var c = document.getElementById("myCanvas");
                 var cxt = c.getContext("2d");
                 cxt.clearRect(0, 0, c.width, c.height);
-                
+
                 document.onkeydown = function (event) {
                     var e = event || window.event;
                     if ((e.keyCode % 2 == 1) && (Math.abs(snake[0] -snake[1]) == 25)) {
@@ -45,8 +45,8 @@
                     }
                 };
                 snake.pop();
-                snake.unshift(snake[0] + snake[0] - snake[1]);;
-                if (snake[0] < 0 || snake[0] > 624 || isRepeat(snake)) {
+                snake.unshift(snake[0] + snake[0] - snake[1]);
+                if (snake[0]< 0 || snake[0]> 624 || isRepeat(snake)||snake[0]%25==1&&snake[1]%25==0||snake[0]%25==0&&snake[1]%25==1) {
                     alert("失败");
                 }
                 go();
