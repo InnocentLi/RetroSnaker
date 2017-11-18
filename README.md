@@ -1,6 +1,6 @@
 # RetroSnaker
 js canvas
-## 42行逆天代码，惊呆小伙伴，蛇可穿身，挑战千年不变的规则(ps:墙装上还是GG的)
+## 42行逆天代码，惊呆小伙伴，蛇可穿身，挑战千年不变的规则(ps:撞墙上还是GG的)
 ```javascript
   var canvas = document.getElementById('myCanvas')
         var ctx = canvas.getContext('2d');
